@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: 'poppins', 'sans-serif';
+}
+
+ .input-group input:focus
+ /* .input-group textarea:focus */
+  { 
+     outline: 0;
+ } 
+ #input-group .error{
+  color: rgb(139, 15, 15);  
+  font-size:16px;
+  margin-top: 5px;
+
+}
+.input-group.success input,
+.input-group.success textarea {
+    border-color: rgb(120, 206, 120);
+}
+
+.input-group.error input,
+.input-group.error textarea {
+    border-color: rgb(207, 51, 51);
+}
+
