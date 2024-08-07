@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <div class="container">
+        <nav >
+            <div class="row">
+
+                <div class="col"><img src="/HOME PG/ASSETS/logo.png" alt=""
+                        style="height:40px; width:100px ;margin: 20px ; margin-left: 10px;">
+                </div>
+                <div class="col mt-4">
+                    <div class="inputbox" style="border:1px"><input type="search" placeholder="I am shopping for..."
+                            style="border:none; color: grey;"><i class="fa fa-search" aria-hidden="true"
+                            style="color: grey;"></i>
+                    </div>
+                </div>
+
+                <div class="col  mt-4">
+                    <i class="fa-solid fa-right-left" style="color: grey;"></i>
+
+                    <i class="fa-solid fa-heart  mx-5 mb-5" style="color: grey;"></i>
+                    <i class="fa-solid fa-bell" style="color: grey;"></i>
+
+                    <i class="fa-solid fa-circle mx-5 mb-5" style="color: grey;"></i>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </div>
+    <nav>
+        <div class=" bg-info-subtle">
+            <div class="row">
+                <div class="col">
+                    <li class="nav-item dropdown m-2  " style="list-style: none;">
+                        <a class="nav-link dropdown-toggle px-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories (see all)
+                        </a>
+                        <ul class="dropdown-menu mx-5">
+                            <li><a class="dropdown-item" href="#">Women's clothing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Men's clothing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Kid's clothing</a></li>
+                        </ul>
+                    </li>
+                </div>
+
+                <div class="col d-flex " style="list-style: none; justify-content: space-around; ">
+                    <li class="mt-3 mb-3">Home</li>
+                    <li class="mt-3 mb-3">Flash sale</li>
+                    <li class="mt-3 mb-3">All blogs</li>
+                    <li class="mt-3 mb-3">Brands</li>
+                    <li class="mt-3 mb-3">Categories</li>
+                    <li class="mt-3 mb-3"><i class="fa-solid fa-cart-shopping px-1"></i><span id="cart_rs_item"
+                            style="font-size: small; font-weight: 100;">Rs.200 (1 items)</span></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="row">
+        <div class="col">
+            <img src="/ITEM PG/ASSETS/JEAN.jpg" alt=""
+                style="margin-top:25px;  margin-left:50px ;   height:400px;width:400px;">
+                <div class="thumbnails pb-5">
+                    <img src="/ITEM PG/ASSETS/JEAN.jpg" alt="Thumbnail 1" class="thumbnail selected" onclick="changeImage('/ITEM PG/ASSETS/JEAN.jpg', this)">
+                    <img src="/ITEM PG/ASSETS/jean2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('/ITEM PG/ASSETS/jean2.jpg', this)">
+                    <img src="/ITEM PG/ASSETS/jean3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('/ITEM PG/ASSETS/jean3.jpg', this)">
+                    <img src="/ITEM PG/ASSETS/jean4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="changeImage('/ITEM PG/ASSETS/jean4.jpg', this)">
+                    <img src="/ITEM PG/ASSETS/jean5.jpg" alt="Thumbnail 5" class="thumbnail" onclick="changeImage('/ITEM PG/ASSETS/jean5.jpg', this)">
+                </div>
+        </div>
+        <div class="col">
+            <div class="container" style="margin-top:25px;  margin-left:50px ;  height:400px;width:400px;">
+                <div class="row align-items-center">
+
+                    <h6>711_Round Neck Printed T-Shirt</h6>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col" style=" line-height:60px;">
+                        <i class="fa-solid fa-star mx-1" style="line-height:50px;"></i>
+                        <i class="fa-solid fa-star mx-1" style="line-height:50px;"></i>
+                        <i class="fa-solid fa-star mx-1" style="line-height:50px;"></i>
+                        <i class="fa-solid fa-star mx-1" style="line-height:50px;"></i>
+                        <i class="fa-solid fa-star mx-2" style="line-height:50px;"></i>(0 reviews)
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col" style=" line-height:60px;">
+                        <i class="far fa-question-circle mx-1 text-success"></i><span class="text-success"> Product
+                            Inquiry</span>
+
+                        <i class="fa-regular fa-heart mx-2"> </i>Add to Wishlist
+                        <!-- <i class="fa-regular fa-arrows-rotate-reverse"></i>Add to compare -->
+                    </div>
+
+                </div>
+                <div class="d-flex flex-wrap align-items-center " style=" line-height:50px;">
+                    <div class="col d-flex flex-wrap align-items-center">
+                        <p>Brand &nbsp; &nbsp; &nbsp;<strong>Zara</strong></p>
+                    </div>
+                    <!-- <div class="col"><strong>Zara</strong></div> -->
+                </div>
+
+                <div class="col d-flex flex-wrap align-items-center " style=" line-height:50px;">
+                    <p>Sold by &nbsp; &nbsp; <strong>Jingle Industries</strong></p>
+                    <button class="btn  btn-outline-success btn-sm rounded-pill mx-3 mb-4 ">
+                        <i class="fa-regular fa-message text-success mx-2 "></i>Message Seller</button>
+                </div>
+
+
+                <div class="row d-flex flex-wrap align-items-center " style=" line-height:50px;"> 
+                    <div class="col d-flex flex-wrap align-items-center">
+                        <p>Price &nbsp; &nbsp; &nbsp;<strong class="text-primary ">Rs.199.50</strong>
+                            <strike class="mx-2">Rs.210.00</strike><span class="mb-5"> /pieces</span>
+                        </p> <span class=" mx-2 mb-3 p-1 border-1">5%</span>
+                    </div>
+                </div>
+
+                <div class="row d-flex flex-wrap align-items-center" style=" line-height:50px;">
+                    <div class="col d-flex flex-wrap align-items-center">
+                        <p>Quantity &nbsp; &nbsp; &nbsp;
+                            <select>
+                                <option value="" class="border-none">6 pcs</option>
+                                <option value="" class="border-none">12 pcs</option>
+                                <option value="" class="border-none">18 pcs</option>
+                                <option value="" class="border-none">24 pcs</option>
+                                <option value="" class="border-none">30 pcs</option>
+                            </select> (6 available)
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="row d-flex flex-wrap align-items-center " style=" line-height:50px;">
+                    <div class="col d-flex flex-wrap align-items-center">
+
+                        <p>Total Price &nbsp; &nbsp; &nbsp;<strong class="text-primary" id="">2400.00</strong></p>
+                    </div>
+                </div>
+
+                <div class="row d-flex flex-wrap align-items-center " style=" line-height:50px;">
+                    <div class="col d-flex flex-wrap align-items-center">
+                        <button class="btn  btn-outline-success btn-sm bg-success  mb-4 text-light"> <i class="fa-solid fa-bag-shopping mx-2 text-light p-2"></i>Add to cart</button>
+                        <button class="btn  btn-outline-success btn-sm bg-primary mx-3 mb-4 text-light"> <i class="fa-solid fa-cart-shopping mx-2 text-light p-2"></i>Buy Now</button>
+   
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

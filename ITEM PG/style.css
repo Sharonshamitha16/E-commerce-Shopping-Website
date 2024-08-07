@@ -1,0 +1,61 @@
+
+body{
+    overflow-x: hidden;
+}
+
+/* nav bar 1st */
+nav{
+    justify-content: space-between;
+}
+/* search box  */
+.inputbox {
+    
+    border: 5px solid grey;
+    border-radius: 4px;
+ 
+}
+
+.inputbox input {
+    border: none;
+    outline: none;
+    flex: 1;
+    color: grey;
+}
+
+.inputbox i {
+    color: grey;
+    cursor: pointer;
+}
+
+.inputbox input::placeholder {
+    color: grey;
+}
+
+
+
+
+/* img changing */
+.main-image {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnails img.selected {
+    border: 2px solid teal;
+}
