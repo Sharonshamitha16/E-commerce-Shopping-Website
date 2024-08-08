@@ -9,3 +9,20 @@ function changeImage(src, element) {
     // Add 'selected' class to the clicked thumbnail
     element.classList.add('selected');
 }
+
+
+
+    const quant = document.getElementById('Quantity');
+    const price = document.getElementById('price');
+
+    total_price = document.getElementById('total_price')
+    function price_change_quantity_click() {
+        let rate = price.textContent.replace('Rs.', '');
+        let quantity =quant.value
+        let total = rate * quantity
+        console.log(total)
+        total_price.textContent = `Rs.${total}`;
+
+    }
+    price_change_quantity_click();
+

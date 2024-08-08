@@ -6,15 +6,21 @@ body{
 /* nav bar 1st */
 nav{
     justify-content: space-between;
+    cursor: pointer;
 }
 /* search box  */
 .inputbox {
     
-    border: 5px solid grey;
-    border-radius: 4px;
+    border: 2px solid grey;
+    border-radius: 20px;
  
 }
-
+ .col_search
+{
+    height:30px;
+    width:10%;
+    
+}
 .inputbox input {
     border: none;
     outline: none;
