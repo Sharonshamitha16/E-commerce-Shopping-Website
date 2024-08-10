@@ -41,12 +41,7 @@ nav{
 
 
 /* img changing */
-.main-image {
-    width: 400px;
-    height: 400px;
-    margin: 20px auto;
-    display: block;
-}
+
 
 .thumbnails {
     display: flex;
@@ -65,3 +60,30 @@ nav{
 .thumbnails img.selected {
     border: 2px solid teal;
 }
+
+
+/* modal  */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    border-top: none;
+}
+
+
+/* add to cart css card popup  */
+.collapse {
+    width: 100%; /* Ensures it takes up the full width */
+    margin-top: 10px; /* Adds space above the collapsible section */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.box1{
+    height: 150px;
+    width:10px;
+}
+
