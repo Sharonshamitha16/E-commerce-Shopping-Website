@@ -74,12 +74,15 @@ nav{
 
 /* add to cart css card popup  */
 .collapse {
-    width: 100%; /* Ensures it takes up the full width */
+    width: 100%; 
+    /* Ensures it takes up the full width */
     margin-top: 10px; /* Adds space above the collapsible section */
+    z-index: 1000;
 }
 
 .card-body {
     padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .box1{

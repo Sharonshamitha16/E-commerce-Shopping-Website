@@ -67,31 +67,50 @@ function price_change_quantity_click(productId) {
     cartItemsContainer.innerHTML += cartItemHTML;
 
 }
-price_change_quantity_click();
+// price_change_quantity_click();
+
+
+
 document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
     modalprice = 0;  // Reset the accumulated price when the modal is closed
 });
+
+
 // cart pg
 function incrementQuantity() {
-    let quantity = parseInt(document.getElementById('quantity').value);
+    let quantityElement = document.getElementById('quantity_cart');
+    let quantity = parseInt(quantityElement.innerText);
     quantity++;
-    document.getElementById('quantity').value = quantity;
-    updateTotalPrice(quantity);
+    quantityElement.innerText = quantity;
+    updateTotalPrice();
 }
 
 function decrementQuantity() {
-    let quantity = parseInt(document.getElementById('quantity').value);
+    let quantityElement = document.getElementById('quantity_cart');
+    let quantity = parseInt(quantityElement.innerText);
     if (quantity > 1) {
         quantity--;
-        document.getElementById('quantity').value = quantity;
-        updateTotalPrice(quantity);
+        quantityElement.innerText = quantity;
+        updateTotalPrice();
     }
 }
 
-function updateTotalPrice(quantity) {
-    const unitPrice = 500.00;
-    const totalPrice = quantity * unitPrice;
-    document.getElementById('totalPrice').textContent = `Rs${totalPrice.toFixed(2)}`;
+function updateTotalPrice() {
+    let quantity = parseInt(document.getElementById('quantity_cart').innerText);
+    let unitPrice = parseFloat(document.getElementById('unitPrice').innerText.replace('Rs', '').replace(',', ''));
+    if (!isNaN(quantity) && !isNaN(unitPrice)) {
+        let totalPrice = quantity * unitPrice;
+        document.getElementById('totalPrice').innerText = 'Rs' + totalPrice.toLocaleString();
+    } else {
+        document.getElementById('totalPrice').innerText = 'Rs0.00';
+    }
 }
 
-
+function removeItem() {
+    // Clear the cart (in a real scenario, you might want to do more, like removing item entries)
+    document.getElementById('quantity_cart').innerText = '0';
+    document.getElementById('totalPrice').innerText = 'Rs0.00';
+    // Display a message
+    alert('Cart is empty');
+    // Optionally, you can hide or disable the cart section
+}
