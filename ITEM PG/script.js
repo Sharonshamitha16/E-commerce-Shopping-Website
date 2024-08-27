@@ -107,10 +107,12 @@ function updateTotalPrice() {
 }
 
 function removeItem() {
-    // Clear the cart (in a real scenario, you might want to do more, like removing item entries)
+    // Clear the cart 
     document.getElementById('quantity_cart').innerText = '0';
     document.getElementById('totalPrice').innerText = 'Rs0.00';
     // Display a message
     alert('Cart is empty');
-    // Optionally, you can hide or disable the cart section
+    document.querySelector('.col-2').style.display = 'none'; // Example class name for cart items container
+    document.querySelector('.cart-summary').style.display = 'none'
+    
 }
