@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="regsiter.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -21,17 +21,19 @@
             <div class="col d-flex justify-content-center pt-3 mt-3">
                 <img src="/REGISTARTION/Assets/reg_banner.jpg" alt="" class="h-200 w-100">
             </div>
-        
+
             <div class="col d-flex align-item-center pt-4 mt-4 ">
-                <form action="" id="form" class="w-400 h-350 bg-">
+                <form action="GET" id="form" class="w-400 h-350 bg-">
                     <div class="logo">
-                        <img src="/REGISTARTION/Assets/logo.png" alt="logo" class="h-15 w-15"><h3 class="d-inline m-4">Shoppize</h3>
+                        <img src="/REGISTARTION/Assets/logo.png" alt="logo" class="h-15 w-15">
+                        <h3 class="d-inline m-4">Shoppize</h3>
                     </div>
                     <h1>Create an account</h1>
                     <!-- name -->
                     <div class="input-group d-flex flex-column">
                         <label for="username">Username</label>
-                        <input type="text" id="usernamereg" name="username" placeholder="Username"  class="border rounded fs-20 mt-1 p-2">
+                        <input type="text" id="usernamereg" name="username" placeholder="Username"
+                            class="border rounded fs-20 mt-1 p-2">
                         <div class="error"></div>
                     </div>
                     <!-- gender -->
@@ -44,53 +46,67 @@
                     <!-- email -->
                     <div class="input-group d-flex flex-column">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Email" class="border rounded fs-20 mt-1 p-2">
+                        <input type="text" id="email" name="email" placeholder="Email"
+                            class="border rounded fs-20 mt-1 p-2">
                         <div class="error"></div>
                     </div>
                     <!-- phone -->
                     <div class="input-group d-flex flex-column">
                         <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder="Phone" class="border rounded fs-20 mt-1 p-2">
+                        <input type="text" id="phone" name="phone" placeholder="Phone"
+                            class="border rounded fs-20 mt-1 p-2">
                         <div class="error"></div>
                     </div>
                     <!-- address -->
                     <div class="input-group d-flex flex-column">
                         <label for="address">Address</label>
-                        <textarea id="address" name="address" placeholder="Address" class="border rounded fs-20 mt-1 p-2"></textarea>
+                        <textarea id="address" name="address" placeholder="Address"
+                            class="border rounded fs-20 mt-1 p-2"></textarea>
                         <div class="error"></div>
                     </div>
-                    <!-- password -->
-                    <div class="input-group d-flex flex-column">
+                    <!-- Password Field -->
+                    <div class="input-group d-flex flex-column position-relative">
                         <label for="password">Password</label>
-                        <input type="password" id="passwordreg" name="password" placeholder="password" class="border rounded fs-20 mt-1 p-2">
+                        <input type="password" id="passwordreg" name="password" placeholder="Password"
+                            class="border rounded fs-20 mt-1 p-2">
+                        <i class="fa fa-eye" id="eyePassword"
+                            onclick="togglePassword('passwordreg', 'eyePassword')"></i>
                         <div class="error"></div>
                     </div>
-                    <!-- confirm password -->
-                    <div class="input-group d-flex flex-column">
+
+                    <!-- Confirm Password Field -->
+                    <div class="input-group d-flex flex-column position-relative">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm_password" class="border rounded fs-20 mt-1 p-2">
+                        <input type="password" id="confirm_password" name="confirm_password"
+                            placeholder="Confirm Password" class="border rounded fs-20 mt-1 p-2">
+                        <i class="fa fa-eye" id="eyeConfirm"
+                            onclick="togglePassword('confirm_password', 'eyeConfirm')"></i>
                         <div class="error"></div>
                     </div>
-                    
+
+
                     <div>
-                        <input type="checkbox" class="d-flex;"><h6> By signing up you agree to our terms and conditions</h6>
-                         
+                        <input type="checkbox" class="d-flex;">
+                        <h6> By signing up you agree to our terms and conditions</h6>
+
                     </div>
-                     <!-- button -->
-                     <div class="input-group d-flex flex-column pt-4">
+                    <!-- button -->
+                    <div class="input-group d-flex flex-column pt-4">
                         <button type="submit" class="btn btn-success ">Create Account </button>
                         <div class="error"></div>
                     </div>
                     <div class=" row  m-2 p-2 pt-4 ">
-                        <cite class="fw-small col w-10">Already have an account?</cite> 
-                        <a href="/LOGIN/login.html"  class="col link-info" style="text-decoration: none;  color: black" >Login Now</a>
-                       </div> 
-                         
+                        <cite class="fw-small col w-10">Already have an account?</cite>
+                        <a href="/LOGIN/login.html" class="col link-info"
+                            style="text-decoration: none;  color: black">Login Now</a>
                     </div>
-                </form>
+
             </div>
-            
+            </form>
+        </div>
+
     </div>
 </body>
-<script src="register.js" ></script>
+<script src="register.js"></script>
+
 </html>

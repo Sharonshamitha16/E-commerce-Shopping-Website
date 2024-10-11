@@ -16,7 +16,7 @@ function validateInputs() {
     const usernameVal = username.value.trim()
    
     
-    const passwordVal = password.value.trim()
+    const passwordVal = password.value.trim() 
     
 
     const registeredUsername = localStorage.getItem('usernamereg');

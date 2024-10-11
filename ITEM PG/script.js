@@ -1,16 +1,16 @@
-// cahnging image js code 
+// // cahnging image js code 
 
-function changeImage(src, element) {
-    const mainImage = document.getElementById('main-image');
-    mainImage.src = src;
+// function changeImage(src, element) {
+//     const mainImage = document.getElementById('main-image');
+//     mainImage.src = src;
 
-    // Remove 'selected' class from all thumbnails
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+//     // Remove 'selected' class from all thumbnails
+//     const thumbnails = document.querySelectorAll('.thumbnail');
+//     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
 
-    // Add 'selected' class to the clicked thumbnail
-    element.classList.add('selected');
-}
+//     // Add 'selected' class to the clicked thumbnail
+//     element.classList.add('selected');
+// }
 
 //  modal price update and price quantity update  and addto cart update
 let modalprice = 0;
@@ -26,24 +26,24 @@ const cartItemsContainer = document.getElementById('cart-items-container');
 
 
 
-const products = {
-    1: {
-        name: 'Ethnic Wear',
-        price: 500,
-        imageSrc: '/ITEM PG/ASSETS/chuthidhar.jpg'
-    },
-    2: {
-        name: 'Casual Shirt',
-        price: 700,
-        imageSrc: '/ITEM PG/ASSETS/JEAN.jpg'
-    }}
+// const products = {
+//     1: {
+//         name: 'Ethnic Wear',
+//         price: 500,
+//         imageSrc: '/ITEM PG/ASSETS/chuthidhar.jpg'
+//     },
+//     2: {
+//         name: 'Casual Shirt',
+//         price: 700,
+//         imageSrc: '/ITEM PG/ASSETS/JEAN.jpg'
+//     }}
 
  total_price = document.getElementById('total_price')
 
 function price_change_quantity_click(productId) {
 
 
-    const product = products[productId]
+    //const product = products[productId]
     let rate = price.textContent.replace('Rs.', '');
     let quantity = quant.value
     let total = rate * quantity
@@ -67,7 +67,7 @@ function price_change_quantity_click(productId) {
     cartItemsContainer.innerHTML += cartItemHTML;
 
 }
-// price_change_quantity_click();
+price_change_quantity_click();
 
 
 

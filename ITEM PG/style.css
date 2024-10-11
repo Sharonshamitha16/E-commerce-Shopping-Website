@@ -15,6 +15,7 @@ nav{
     border-radius: 20px;
  
 }
+/* this is search bar outline */
  .col_search
 {
     height:30px;
@@ -38,7 +39,10 @@ nav{
 }
 
 
-
+i{
+    color: grey;
+}
+.fa-
 
 /* img changing */
 
